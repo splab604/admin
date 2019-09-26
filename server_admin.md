@@ -12,7 +12,7 @@ sudo system-config-samba
 
 ## delete user and data
 ```
-# 1. delte samba user first
+# 1. delete samba user first if it exists
 sudo system-config-samba
 # 2. delete user
 sudo deluser zhangsan
