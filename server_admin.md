@@ -10,7 +10,12 @@ ls -al
 
 ## create shareable folder
 ```
+# open in remote desktop terminal, require UI
 sudo system-config-samba 
+# add samba user
+preferences -> samba users ->  add user -> unix username select as zhangsan -> enter new passwd
+# add shareable folder
+click + icon -> in 'basic' panel, browser /data/zhangsan -> in 'access' panel, select zhangsan 
 ```
 
 ## delete user and data
