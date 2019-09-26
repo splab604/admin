@@ -19,13 +19,13 @@ sudo deluser zhangsan
 # 3. delete user data
 sudo rm –rf /data/zhangsan
 ```
-
-# temporary block user access
+# User Acess
+## temporary block user access
 ```
 chage -E0 testuser
 ```
 
-# allow user access
+## allow user access
 ```
 chage –E -1 testuser
 ```
