@@ -2,7 +2,7 @@
 ## create user
 ```
 sudo adduser --home /data/zhangsan zhangsan
-cd /data & chmod –R 700 zhangsan
+cd /data & chmod -R 700 zhangsan
 ```
 
 ## create shareable folder
