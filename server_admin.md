@@ -3,6 +3,9 @@
 ```
 sudo adduser --home /data/zhangsan zhangsan
 cd /data & sudo chmod -R 700 zhangsan
+
+# list directory
+ls -al
 ```
 
 ## create shareable folder
