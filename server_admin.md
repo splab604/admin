@@ -8,6 +8,11 @@ cd /data & sudo chmod -R 700 zhangsan
 ls -al
 ```
 
+## change passwd
+```
+sudo passwd zhangsan
+```
+
 ## create shareable folder
 ```
 # open in remote desktop terminal, require UI
