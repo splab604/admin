@@ -43,3 +43,9 @@ chage -E0 testuser
 ```
 chage –E -1 testuser
 ```
+
+## 修改文件夹所属用户名和用户组
+
+```
+sudo chown -R <owner>:<group> <folder name> 
+```
