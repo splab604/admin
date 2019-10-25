@@ -51,4 +51,6 @@ sudo chown -R <owner>:<group> <folder name>
 ```
 
 ## check net traffic usage
+```
 sudo nethogs
+```
