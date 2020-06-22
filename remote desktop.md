@@ -10,9 +10,13 @@
   sudo apt-get install vnc4server
   ```
   
-* 安装 `xubuntu-desktop`
+* 安装 `xfce4`
   ```bash
-  sudo apt-get install xubuntu-desktop
+  sudo apt-get install xfce4
+  
+  # 或者安装 mate-session
+  sudo apt install mate-session-manager
+  #后面的 xfce4-session 换成 mate-session
   ```
   
 * 向 `xsession` 中写入 `xfce4-session`
