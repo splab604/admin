@@ -1,4 +1,4 @@
-# ubuntu 16.04 安装远程桌面
+## ubuntu 16.04 安装远程桌面
 
 * 安装 `xrdp`
   ```bash
@@ -36,3 +36,18 @@
   ```bash
   /lib/systemd/systemd-sysv-install enable xrdp
   ```
+  
+## 安装 `samba`，开启局域网共享服务
+* 安装
+  ```bash
+  sudo apt-get install samba
+  sudo apt-get install system-config-samba
+  ```
+  
+* 问题
+  * 运行 `system-config-samba` 出现 `SystemError: Could not open configuration file '/etc/libnbuser.conf'`
+  
+    解决：在 `/etc` 目录下创建 `libuser.conf` 文件
+    ```bash
+    sudo touch /etc/libuser.conf
+    ```
