@@ -54,3 +54,33 @@ sudo chown -R <owner>:<group> <folder name>
 ```
 sudo nethogs
 ```
+
+## 远程挂载
+
+* 例如在 216，安装 `sshfs`
+  ```bash
+  sudo apt-get install sshfs
+  ```
+  
+* 创建文件夹
+  ```bash
+  sudo mkdir /data/corpus_211
+  ```
+  
+* 查看 `uid`
+  ```bash
+  cat /etc/passwd | grep lijianchen
+  ```
+
+* 远程挂载
+  ```bash
+  sudo sshfs -o allow_other,uid=1000,gid=1000 lijianchen@192.168.11.211:/data/corpus /data/corpus_211
+  
+  # 查看参数帮助
+  sshfs -h
+  ```
+  
+* 取消挂载
+  ```bash
+  sudo umount /data/corpus_211
+  ```
