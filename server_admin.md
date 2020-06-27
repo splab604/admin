@@ -77,7 +77,11 @@ sudo nethogs
 
 * 远程挂载
   ```bash
-  sudo sshfs -o allow_other,uid=1000,gid=1000 lijianchen@192.168.11.211:/data/corpus /data/corpus_211
+  # 216
+  sudo sshfs -o allow_other,uid=1000,gid=1000 lijianchen@192.168.1.211:/data/corpus /data/corpus_211
+  # 215
+  sudo sshfs -o allow_other,uid=1007,gid=1007 lijianchen@192.168.1.211:/data/corpus /data/corpus_211
+  # 使用 192.168.1.211 而不是 192.168.11.211 因为前一个走的是 Infiniband，后一个走的是较慢的路由器
   
   # 查看参数帮助
   sshfs -h
@@ -86,4 +90,18 @@ sudo nethogs
 * 取消挂载
   ```bash
   sudo umount /data/corpus_211
+  ```
+  
+* 开机自动挂载
+  ```bash
+  cd ~
+  touch auto_mount.sh && chmod +x auto_mount.sh
+  
+  vim auto_mount.sh
+  # 写入
+  echo "<ssh_passwd>" | sshfs -o allow_other,uid=1007,gid=1007,password_stdin lijianchen@192.168.1.211:/data/corpus /data/corpus_211
+  
+  sudo vim /etc/rc.local
+  # 写入
+  sudo bash /data/lijianchen/auto_mount.sh
   ```
