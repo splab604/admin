@@ -2,6 +2,9 @@
 ## create user
 ```
 sudo adduser --home /data/zhangsan zhangsan
+# copy .bashrc from system
+cp /etc/skel/.bashrc /data/zhangsan/
+
 cd /data
 sudo chmod -R 700 zhangsan
 
