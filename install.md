@@ -36,6 +36,9 @@
   ```bash
   /lib/systemd/systemd-sysv-install enable xrdp
   ```
+
+* xfce4 tab 补全键冲突：
+  https://blog.csdn.net/xuezhisdc/article/details/48662435
   
 ## 安装 `samba`，开启局域网共享服务
 * 安装
