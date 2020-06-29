@@ -56,7 +56,7 @@
     ```
     
 ## 安装 cuda & cudnn
-* 第二次安装其他版本时需要 runfile
+* 第二次安装其他版本时需要 runfile 方式安装
 
 * [NVIDIA CUDA Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)
 
@@ -75,9 +75,7 @@
   # 例如：
   wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run
   
-  chmod +x cuda_9.0.176_384.81_linux-run
-  
-  sudo ./cuda_9.0.176_384.81_linux-run --no-opengl-libs
+  sudo bash cuda_9.0.176_384.81_linux-run --no-opengl-libs
   
   # 一直按回车
   #
@@ -103,6 +101,7 @@
 * 验证是否安装成功
   ```bash
   nvcc --version
+  /usr/local/cuda-10.2/bin/nvcc --version
   ```
   
 * cudnn
