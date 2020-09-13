@@ -85,7 +85,7 @@
   # cuda samples 装不装应该都行
   
   # 添加系统环境变量
-  sudo vim /etc/profile
+  sudo vim /etc/bash.bashrc
   # 写入：
   export PATH=/usr/local/cuda-9.0/bin:$PATH
   export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
