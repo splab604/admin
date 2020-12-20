@@ -211,5 +211,5 @@ sudo nethogs
     ```bash
     crontab -e
     # 输入
-    0 0 1 * * cd /data/$USER/trash && \rm -r *
+    0 0 * * 0 cd /data/$USER/trash && \rm -r *
     ```
