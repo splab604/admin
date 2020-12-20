@@ -72,6 +72,8 @@
 
 * 安装 cuda
   ```bash
+  ## 不要下载deb包，否则会自动装显卡驱动
+  
   # 例如：
   wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run
   
