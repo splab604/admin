@@ -40,6 +40,22 @@
 * xfce4 tab 补全键冲突：
   https://blog.csdn.net/xuezhisdc/article/details/48662435
   
+## 安装中文输入法
+```
+# 安装输入法
+sudo apt-get install fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin -y
+
+# 谷歌输入法
+sudo apt-get install fcitx fcitx-googlepinyin -y
+
+# 如果出现安装失败，输入以下命令，安装相关依赖包。
+sudo apt-get -f install
+
+## 配置输入法
+安装好后，在 xfce 中 Preference–>Fcitx Configuration --> 选择输入法 ，此时可能为空，重启系统。
+重启进入系统后，再次 Preference–>Fcitx Configuration --> 选择输入法，此时出现输入法，选择需要的输入法即可。
+```
+  
 ## 安装 `samba`，开启局域网共享服务
 * 安装
   ```bash
