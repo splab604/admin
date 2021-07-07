@@ -54,6 +54,10 @@ sudo apt-get -f install
 ## 配置输入法
 安装好后，在 xfce 中 Preference–>Fcitx Configuration --> 选择输入法 ，此时可能为空，重启系统。
 重启进入系统后，再次 Preference–>Fcitx Configuration --> 选择输入法，此时出现输入法，选择需要的输入法即可。
+
+## ubuntu18.04 安装系统自带中文输入法
+https://pinyinjoe.com/linux/ubuntu-18-gnome-chinese-setup.htm
+输入方法选择 iBus
 ```
   
 ## 安装 `samba`，开启局域网共享服务
